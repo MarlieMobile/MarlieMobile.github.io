@@ -1,0 +1,94 @@
+body {
+    margin: 0px;
+    background-color: #080808;
+    font-family: "Manrope Variablefont Wght", sans-serif;
+    color: #FFFFFF;
+}
+
+button {
+    background-color: #00808E;
+    color: #FFFFFF;
+    border-radius: 1rem;
+    border-width: 0px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #00626d;
+}
+
+/*======= Header =======*/
+
+.header {
+    height: 3rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161616;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 1px solid rgba(145, 145, 145, 0.3);
+} 
+
+.header .social-icons {
+    display: flex;
+    gap: clamp(1.5rem, 5vw, 3rem);
+}
+
+.header img {
+    height: 70%;
+}
+
+.header p {
+    font-size: clamp(1rem, 5vw, 1.3rem);
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    color: #00808E;
+}
+
+/*======= Main =======*/
+
+main {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: clamp(2rem, 5vw, 4rem);
+    text-align: center;
+}
+
+.applist {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 1.5rem 0px;
+}
+
+.container {
+    width: clamp(200px, 50vw, 300px);
+    padding: 1rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container img {
+    max-width: 100%;
+    border-radius: 10px;
+}

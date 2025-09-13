@@ -23,28 +23,35 @@ button:hover {
 .header {
     height: 3rem;
     display: flex;
-    gap: 1rem;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #161616;
     padding: 10px 20px 10px 20px;
     border-bottom: 1px solid rgba(145, 145, 145, 0.3);
 } 
 
-.header .social-icons {
-    display: flex;
-    gap: clamp(1.5rem, 5vw, 3rem);
+.header .image-container {
+    flex: 1;
+    height: 100%;
 }
 
-.header img {
-    height: 70%;
+.header .image-container img {
+    height: 100%;
 }
 
 .header p {
-    font-size: clamp(1rem, 5vw, 1.3rem);
+    flex: 1;
+    font-size: clamp(1.2rem, 4vw, 2rem);
     text-align: center;
     font-family: "Pacifico", cursive;
     color: #00808E;
+}
+
+.header .social-icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: clamp(1.5rem, 5vw, 3rem);
 }
 
 /*======= Main =======*/
@@ -66,14 +73,14 @@ main {
     text-align: center;
 }
 
-.applist {
+.app-list {
     display: flex;
     justify-content: center;
     flex-direction: row;
     padding: 1.5rem 0px;
 }
 
-.container {
+.app-container {
     width: clamp(200px, 50vw, 300px);
     padding: 1rem;
     border-radius: 16px;
@@ -88,7 +95,7 @@ main {
     gap: 1rem;
 }
 
-.container img {
+.app-container img {
     max-width: 100%;
     border-radius: 10px;
 }
